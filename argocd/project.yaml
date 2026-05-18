@@ -6,7 +6,7 @@ metadata:
 spec:
   description: Spring API GitOps project
   sourceRepos:
-    - 'https://github.com/your-org/backend-app-repo.git'
+    - 'https://github.com/Sangram-Rajpoot/backend-app-repo.git'
   destinations:
     - namespace: spring-api
       server: https://kubernetes.default.svc
