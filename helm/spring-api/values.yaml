@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: https://jfrogtrial2166.jfrog.io/artifactory/api/docker/docker-local
-  tag: replace-me
+  tag: set-by-jenkins
   pullPolicy: IfNotPresent
 
 imagePullSecrets:
@@ -12,14 +12,19 @@ serviceAccount:
   create: true
   name: ""
 
-awsSecretsAccess:
-  enabled: true
-  serviceAccountName: aws-secrets-reader
-  roleArn: arn:aws:iam::123456789012:role/spring-api-secrets-reader
+externalSecret:
+  enabled: false
 
-secretStore:
-  name: aws-secretsmanager
-  region: ap-south-1
+awsSecretsAccess:
+  enabled: false
+# awsSecretsAccess:
+#   enabled: true
+#   serviceAccountName: aws-secrets-reader
+#   roleArn: arn:aws:iam::123456789012:role/spring-api-secrets-reader
+
+# secretStore:
+#   name: aws-secretsmanager
+#   region: ap-south-1
 
 externalSecret:
   enabled: true
