@@ -6,7 +6,7 @@ metadata:
 spec:
   project: spring-api
   source:
-    repoURL: https://github.com/your-org/backend-app-repo.git
+    repoURL: https://github.com/Sangram-Rajpoot/backend-app-repo.git
     targetRevision: main
     path: helm/spring-api
     helm:
