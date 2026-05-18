@@ -8,14 +8,6 @@ externalSecret:
 awsSecretsAccess:
   enabled: false
 
-awsSecretsAccess:
-  roleArn: arn:aws:iam::123456789012:role/spring-api-secrets-reader
-
 secretStore:
   region: ap-south-1
 
-externalSecret:
-  enabled: false
-
-awsSecretsAccess:
-  enabled: false
