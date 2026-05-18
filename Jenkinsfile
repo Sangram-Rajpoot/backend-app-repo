@@ -10,7 +10,7 @@ pipeline {
         APP_NAME = 'spring-api'
 
         // Replace with your real JFrog registry
-        JFROG_REGISTRY = 'acme.jfrog.io'
+        JFROG_REGISTRY = 'jfrogtrial2166.jfrog.io'
         JFROG_REPO = 'docker-local'
 
         AWS_DEFAULT_REGION = 'ap-south-1'
