@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: acme.jfrog.io/docker-local/spring-api
+  repository: https://jfrogtrial2166.jfrog.io/artifactory/api/docker/docker-local
   tag: replace-me
   pullPolicy: IfNotPresent
 
