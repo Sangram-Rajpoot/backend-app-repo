@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: spring-api-prod
+  namespace: argocd
+spec:
+  project: spring-api
+  source:
+    repoURL: https://github.com/your-org/backend-app-repo.git
+    targetRevision: main
+    path: helm/spring-api
+    helm:
+      valueFiles:
+        - values.yaml
+        - values-prod.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: spring-api
+  syncPolicy:
+    automated:
+      enabled: true
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+      - PruneLast=true

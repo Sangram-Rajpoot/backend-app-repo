@@ -1,0 +1,9 @@
+image:
+  repository: acme.jfrog.io/docker-local/spring-api
+  tag: set-by-jenkins
+
+awsSecretsAccess:
+  roleArn: arn:aws:iam::123456789012:role/spring-api-secrets-reader
+
+secretStore:
+  region: ap-south-1
