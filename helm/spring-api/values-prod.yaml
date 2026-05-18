@@ -1,9 +1,21 @@
 image:
   repository: https://jfrogtrial2166.jfrog.io/artifactory/api/docker/docker-local
   tag: set-by-jenkins
+  
+externalSecret:
+  enabled: false
+
+awsSecretsAccess:
+  enabled: false
 
 awsSecretsAccess:
   roleArn: arn:aws:iam::123456789012:role/spring-api-secrets-reader
 
 secretStore:
   region: ap-south-1
+
+externalSecret:
+  enabled: false
+
+awsSecretsAccess:
+  enabled: false
