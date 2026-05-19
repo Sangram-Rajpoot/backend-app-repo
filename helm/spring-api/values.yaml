@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: https://jfrogtrial2166.jfrog.io/artifactory/api/docker/docker-local
-  tag: set-by-jenkins
+  tag: "5-b7965986"
   pullPolicy: IfNotPresent
 
 imagePullSecrets:
